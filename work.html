@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Work | Comepty</title>
+  <meta name="description"
+    content="A record of projects built by Comepty: visual website building, digital storefronts, product focused web experiences, storytelling and an experimental desktop AI assistant. Described honestly, including what is still in development.">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Comepty">
+  <meta property="og:title" content="Our Work | Comepty">
+  <meta property="og:description" content="Live and experimental projects from Comepty.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/brand.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Comepty home">
+        <img class="brand__mark" src="assets/logo.svg" alt="" width="32" height="32">
+        <span class="brand__wordmark">Comepty</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a class="main-nav__link" href="index.html">Home</a>
+        <a class="main-nav__link" href="about.html">About</a>
+        <a class="main-nav__link" href="services.html">Services</a>
+        <a class="main-nav__link" href="work.html" aria-current="page">Our Work</a>
+        <a class="main-nav__link" href="innovation.html">Innovation</a>
+        <a class="main-nav__link" href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm header-cta" href="contact.html">Start a Conversation</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel"
+          aria-label="Open menu">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-panel" id="menu-panel" aria-hidden="true">
+    <nav class="menu-panel__list" aria-label="Mobile">
+      <a class="menu-panel__link" href="index.html">Home <span>01</span></a>
+      <a class="menu-panel__link" href="about.html">About <span>02</span></a>
+      <a class="menu-panel__link" href="services.html">Services <span>03</span></a>
+      <a class="menu-panel__link" href="work.html">Our Work <span>04</span></a>
+      <a class="menu-panel__link" href="innovation.html">Innovation <span>05</span></a>
+      <a class="menu-panel__link" href="contact.html">Contact <span>06</span></a>
+    </nav>
+    <div class="menu-panel__foot">
+      <p class="eyebrow">Engineering possibilities</p>
+      <a class="btn btn--accent btn--block" href="contact.html">Start a Conversation</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="page-intro">
+      <div class="grid-backdrop" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="page-intro__inner">
+          <div>
+            <p class="eyebrow" data-reveal>Selected projects</p>
+            <h1 data-reveal style="--reveal-delay: 80ms">Work that shaped how this is built.</h1>
+          </div>
+          <div class="page-intro__aside">
+            <p class="lede" data-reveal style="--reveal-delay: 140ms">A record of live and experimental work. Each entry
+              describes what the project is rather than how it performed. Where a project is still in development, it is
+              labelled that way.</p>
+            <div class="work-index" data-reveal style="--reveal-delay: 200ms">
+              <a href="#frodecorp">Frodecorp</a>
+              <a href="#lunosen-stitches">Lunosen Stitches</a>
+              <a href="#skincare">Skincare</a>
+              <a href="#mass-story">Mass. Story</a>
+              <a href="#csic">CSIC</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="project-list">
+
+          <!-- 01 FRODECORP -->
+          <article class="project-card" id="frodecorp">
+            <a class="project-card__media" href="https://comepty-official.github.io/Frodecorp-/" target="_blank"
+              rel="noopener noreferrer" aria-label="Visit Frodecorp">
+              <div class="project-canvas">
+                <canvas data-project-visual="frodecorp" aria-hidden="true"></canvas>
+                <img class="project-shot" data-project-shot="frodecor" src="project-assets/project1.png">
+                <span class="project-canvas__label">Concept preview</span>
+              </div>
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>Project 01</span>
+                <span class="dot"></span>
+                <span class="status">Live concept</span>
+              </div>
+              <h3>Frodecorp</h3>
+              <p>A digital website creation concept built around a canvas based editor. The project explores how far
+                visual composition can go before code becomes the easier route. It is a concept, not a finished product,
+                and it shows what a more visual approach to building a site could look like.</p>
+              <div class="project-card__tech">
+                <span class="tag">Visual editor</span>
+                <span class="tag">Web interface</span>
+                <span class="tag tag--accent">Concept</span>
+              </div>
+              <div class="project-card__links">
+                <a class="link-arrow" href="https://comepty-official.github.io/Frodecorp-/" target="_blank"
+                  rel="noopener noreferrer">
+                  Visit project
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="square" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 LUNOSEN STITCHES -->
+          <article class="project-card" id="lunosen-stitches">
+            <a class="project-card__media" href="https://lunosenstitches.org/" target="_blank" rel="noopener noreferrer"
+              aria-label="Visit Lunosen Stitches">
+              <div class="project-canvas">
+                <canvas data-project-visual="lunosen" aria-hidden="true"></canvas>
+                <img class="project-shot" data-project-shot="lunosen" src="project-assets/project2.png" alt="">
+                <span class="project-canvas__label">Concept preview</span>
+              </div>
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>Project 02</span>
+                <span class="dot"></span>
+                <span class="status">Live site</span>
+              </div>
+              <h3>Lunosen Stitches</h3>
+              <p>A complete digital presence for Lunosen Stitches, covering the full journey from first impression
+                through to enquiry. The visual language stays restrained so attention lands on the craft itself rather
+                than on the website.</p>
+              <div class="project-card__tech">
+                <span class="tag">Digital presence</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">Enquiry flow</span>
+              </div>
+              <div class="project-card__links">
+                <a class="link-arrow" href="https://lunosenstitches.org/" target="_blank" rel="noopener noreferrer">
+                  Visit project
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="square" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 SKINCARE -->
+          <article class="project-card" id="USMAN
+HVAC TECH">
+            <a class="project-card__media" href="https://comepty-official.github.io/USMAN-HVAC/" target="_blank"
+              rel="noopener noreferrer" aria-label="Visit Skincare">
+              <div class="project-canvas">
+                <canvas data-project-visual="skincare" aria-hidden="true"></canvas>
+                <img class="project-shot" data-project-shot="skincare" src="project-assets/project3.png" alt="">
+                <span class="project-canvas__label">Concept preview</span>
+              </div>
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>Project 03</span>
+                <span class="dot"></span>
+                <span class="status">Live site</span>
+              </div>
+              <h3>USMAN
+                HVAC TECH</h3>
+              <p>Professional heating, ventilation and air conditioning services — installation, maintenance and repairs
+                for homes and businesses across Lagos.</p>
+              <div class="project-card__tech">
+                <span class="tag">Digital retail</span>
+                <span class="tag">Editorial layout</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <div class="project-card__links">
+                <a class="link-arrow" href="https://comepty-official.github.io/USMAN-HVAC/" target="_blank"
+                  rel="noopener noreferrer">
+                  Visit project
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="square" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 MASS. STORY -->
+          <article class="project-card" id="mass-story">
+            <a class="project-card__media" href="https://comepty-official.github.io/MASS.-STORY/" target="_blank"
+              rel="noopener noreferrer" aria-label="Visit Mass. Story">
+              <div class="project-canvas">
+                <canvas data-project-visual="massstory" aria-hidden="true"></canvas>
+                <img class="project-shot" data-project-shot="massstory" src="project-assets/project4.png" alt="">
+                <span class="project-canvas__label">Concept preview</span>
+              </div>
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>Project 04</span>
+                <span class="dot"></span>
+                <span class="status">Live concept</span>
+              </div>
+              <h3>Mass. Story</h3>
+              <p>A reader-first journey through the people, conflicts, ideas, and industries that shaped Massachusetts -
+                from Indigenous homelands to a changing future</p>
+              <div class="project-card__tech">
+                <span class="tag">Storytelling</span>
+                <span class="tag">Web experience</span>
+                <span class="tag tag--accent">Concept</span>
+              </div>
+              <div class="project-card__links">
+                <a class="link-arrow" href="https://comepty-official.github.io/MASS.-STORY/" target="_blank"
+                  rel="noopener noreferrer">
+                  Visit project
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="square" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05 CSIC -->
+          <article class="project-card" id="csic">
+            <div class="project-card__media">
+              <div class="project-canvas">
+                <canvas data-project-visual="csic" aria-hidden="true"></canvas>
+                <img class="project-shot" data-project-shot="csic" src="project-assets/project5.png" alt="">
+                <span class="project-canvas__label">Concept preview</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>Project 05</span>
+                <span class="dot"></span>
+                <span class="status">Experimental</span>
+              </div>
+              <h3>CSIC</h3>
+              <p>Comepty Super Intelligence Connection is an experimental Windows based assistant exploring the
+                connection between artificial intelligence and desktop productivity. It works with AI assisted computer
+                interactions, file operations and development workflows.</p>
+              <p>CSIC is an experiment, not a finished commercial product. Its behaviour and scope keep changing as the
+                underlying models develop, and it is presented here in that state on purpose.</p>
+              <div class="project-card__tech">
+                <span class="tag">Desktop application</span>
+                <span class="tag">AI assistant</span>
+                <span class="tag">Automation</span>
+                <span class="tag tag--accent">In development</span>
+              </div>
+              <div class="project-card__links">
+                <a class="link-arrow" href="https://github.com/comepty-official/" target="_blank"
+                  rel="noopener noreferrer">
+                  View on GitHub
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="square" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="shell">
+        <div class="page-cta">
+          <p data-reveal>More of the work lives on the Comepty GitHub organisation, including experiments that have not
+            yet reached a public site.</p>
+          <a class="btn btn--ghost" href="https://github.com/comepty-official/" target="_blank"
+            rel="noopener noreferrer" data-reveal style="--reveal-delay: 80ms">
+            Visit GitHub
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-band__grid" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="cta-band__inner">
+          <div>
+            <h2 data-reveal>Have something worth building?</h2>
+            <p data-reveal style="--reveal-delay: 100ms">If one of these projects is close to something you are working
+              on, I would be glad to hear about it.</p>
+          </div>
+          <div class="cta-band__actions" data-reveal style="--reveal-delay: 180ms">
+            <a class="btn btn--light" href="contact.html">
+              Start a Conversation
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="site-footer__top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Comepty home">
+            <img class="brand__mark" src="assets/logo-light.svg" alt="" width="32" height="32">
+            <span class="brand__wordmark">Comepty</span>
+          </a>
+          <p>An independent technology venture exploring AI, software automation and intelligent systems.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="innovation.html">Innovation</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Work</h3>
+          <a href="work.html">All projects</a>
+          <a href="https://comepty-official.github.io/Frodecorp-/" target="_blank"
+            rel="noopener noreferrer">Frodecorp</a>
+          <a href="https://lunosenstitches.org/" target="_blank" rel="noopener noreferrer">Lunosen Stitches</a>
+          <a href="https://comepty-official.github.io/USMAN-HVAC/" target="_blank"
+            rel="noopener noreferrer">Skincare</a>
+          <a href="https://comepty-official.github.io/MASS.-STORY/" target="_blank" rel="noopener noreferrer">Mass.
+            Story</a>
+        </div>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <a href="https://github.com/comepty-official/" target="_blank" rel="noopener noreferrer">
+            GitHub organisation
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" />
+            </svg>
+          </a>
+          <a href="contact.html">Start a conversation</a>
+          <li class="text-muted">Contact details coming soon</li>
+        </div>
+      </div>
+      <div class="footer-statement">
+        <p>Building technology for a more connected future.</p>
+        <a href="contact.html">
+          Start a Conversation
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" />
+          </svg>
+        </a>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span id="year">2026</span> Comepty. All rights reserved.</span>
+        <div class="footer-base__meta">
+          <span>Computational Orchestration of Modular Ecosystems for Progressive Technology and Yield</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/work.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

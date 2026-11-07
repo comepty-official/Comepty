@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Comepty</title>
+  <meta name="description"
+    content="Get in touch with Comepty about an idea, a project or an interesting problem. Whether you are exploring a collaboration or simply want to discuss technology, feel free to reach out.">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Comepty">
+  <meta property="og:title" content="Contact | Comepty">
+  <meta property="og:description"
+    content="Have an idea, a project or an interesting problem to solve? I would be glad to hear about it.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/brand.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Comepty home">
+        <img class="brand__mark" src="assets/logo.svg" alt="" width="32" height="32">
+        <span class="brand__wordmark">Comepty</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a class="main-nav__link" href="index.html">Home</a>
+        <a class="main-nav__link" href="about.html">About</a>
+        <a class="main-nav__link" href="services.html">Services</a>
+        <a class="main-nav__link" href="work.html">Our Work</a>
+        <a class="main-nav__link" href="innovation.html">Innovation</a>
+        <a class="main-nav__link" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm header-cta" href="contact.html">Start a Conversation</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel"
+          aria-label="Open menu">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-panel" id="menu-panel" aria-hidden="true">
+    <nav class="menu-panel__list" aria-label="Mobile">
+      <a class="menu-panel__link" href="index.html">Home <span>01</span></a>
+      <a class="menu-panel__link" href="about.html">About <span>02</span></a>
+      <a class="menu-panel__link" href="services.html">Services <span>03</span></a>
+      <a class="menu-panel__link" href="work.html">Our Work <span>04</span></a>
+      <a class="menu-panel__link" href="innovation.html">Innovation <span>05</span></a>
+      <a class="menu-panel__link" href="contact.html">Contact <span>06</span></a>
+    </nav>
+    <div class="menu-panel__foot">
+      <p class="eyebrow">Engineering possibilities</p>
+      <a class="btn btn--accent btn--block" href="mailto:comepty.org@gmail.com">Start a Conversation</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="page-intro">
+      <div class="grid-backdrop" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="page-intro__inner">
+          <div>
+            <p class="eyebrow" data-reveal>Get in touch</p>
+            <h1 data-reveal style="--reveal-delay: 80ms">Let's talk about what you are building.</h1>
+          </div>
+          <div class="page-intro__aside">
+            <p class="lede" data-reveal style="--reveal-delay: 140ms">Have an idea, a project or an interesting problem to solve? I would be glad to hear about it. Whether you are exploring a collaboration or simply want to discuss technology, feel free to get in touch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="contact-grid">
+
+          <!-- FORM -->
+          <div>
+            <form class="form" id="contact-form" novalidate>
+              <div class="form__row">
+                <div class="field" data-field="name">
+                  <label class="field__label" for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+                  <p class="field__error" id="name-error" aria-live="polite">Please enter your name.</p>
+                </div>
+                <div class="field" data-field="email">
+                  <label class="field__label" for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@organisation.com"
+                    required>
+                  <p class="field__error" id="email-error" aria-live="polite">Please enter a valid email address.</p>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="field" data-field="organisation">
+                  <label class="field__label" for="organisation">Organisation</label>
+                  <input id="organisation" name="organisation" type="text" autocomplete="organization"
+                    placeholder="Company or organisation, if relevant">
+                  <p class="field__error"></p>
+                </div>
+                <div class="field" data-field="category">
+                  <label class="field__label" for="category">Enquiry category</label>
+                  <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="Software engineering">Software engineering</option>
+                    <option value="Artificial intelligence">Artificial intelligence</option>
+                    <option value="Automation and orchestration">Automation and orchestration</option>
+                    <option value="Digital product development">Digital product development</option>
+                    <option value="Technology consulting">Technology consulting</option>
+                    <option value="Collaboration or other">Collaboration or other</option>
+                  </select>
+                  <p class="field__error" id="category-error" aria-live="polite">Please choose a category.</p>
+                </div>
+              </div>
+
+              <div class="field" data-field="subject">
+                <label class="field__label" for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="A short summary" required>
+                <p class="field__error" id="subject-error" aria-live="polite">Please add a subject.</p>
+              </div>
+
+              <div class="field" data-field="message">
+                <label class="field__label" for="message">Message</label>
+                <textarea id="message" name="message"
+                  placeholder="Describe the problem, the context and what a good outcome would look like."
+                  required></textarea>
+                <p class="field__error" id="message-error" aria-live="polite">Please write a short message.</p>
+              </div>
+
+              <div class="form__foot">
+                <p class="form__hint">This form prepares an email in your own mail application. Nothing is sent to a
+                  server from this page.</p>
+                <button class="btn btn--primary" type="submit">
+                  Prepare Email
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="square" />
+                  </svg>
+                </button>
+              </div>
+
+              <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+
+          <!-- ASIDE -->
+          <aside class="contact-aside">
+            <div class="contact-aside__block" data-reveal>
+              <h2>Direct contact</h2>
+              <p>Email is the quickest way to reach me. If you would rather talk something through, the phone line is
+                open during working hours.</p>
+            </div>
+
+            <dl data-reveal style="--reveal-delay: 80ms">
+              <div class="info-row">
+                <dt>Email</dt>
+                <dd>comepty.org@gmail.com</dd>
+              </div>
+              <div class="info-row">
+                <dt>Telephone</dt>
+                <dd>+234 901 152 6277</dd>
+              </div>
+              <div class="info-row">
+                <dt>Office</dt>
+                <dd>Remote, working with teams anywhere</dd>
+              </div>
+              <div class="info-row">
+                <dt>GitHub</dt>
+                <dd>
+                  <a class="sweep-link" href="https://github.com/comepty-official/" target="_blank"
+                    rel="noopener noreferrer">comepty-official</a>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="contact-aside__block" data-reveal style="--reveal-delay: 140ms">
+              <h2>What happens next</h2>
+              <p>Every message gets read. If what you are describing needs a technical answer, the reply will ask specific questions rather than send a generic brochure.</p>
+            </div>
+
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="site-footer__top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Comepty home">
+            <img class="brand__mark" src="assets/logo-light.svg" alt="" width="32" height="32">
+            <span class="brand__wordmark">Comepty</span>
+          </a>
+          <p>An independent technology venture exploring AI, software automation and intelligent systems.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="innovation.html">Innovation</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Work</h3>
+          <a href="work.html">All projects</a>
+          <a href="https://comepty-official.github.io/Frodecorp-/" target="_blank"
+            rel="noopener noreferrer">Frodecorp</a>
+          <a href="https://lunosenstitches.org/" target="_blank" rel="noopener noreferrer">Lunosen Stitches</a>
+          <a href="https://skincare.comepty-org.workers.dev/" target="_blank" rel="noopener noreferrer">Skincare</a>
+          <a href="https://comepty-official.github.io/MASS.-STORY/" target="_blank" rel="noopener noreferrer">Mass.
+            Story</a>
+        </div>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <a href="https://github.com/comepty-official/" target="_blank" rel="noopener noreferrer">
+            GitHub organisation
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" />
+            </svg>
+          </a>
+          <a href="contact.html">Start a conversation</a>
+          <li class="text-muted">Remote, working with teams anywhere</li>
+        </div>
+      </div>
+      <div class="footer-statement">
+        <p>Building technology for a more connected future.</p>
+        <a href="contact.html">
+          Start a Conversation
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" />
+          </svg>
+        </a>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span id="year">2026</span> Comepty. All rights reserved.</span>
+        <div class="footer-base__meta">
+          <span>Computational Orchestration of Modular Ecosystems for Progressive Technology and Yield</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/contact.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

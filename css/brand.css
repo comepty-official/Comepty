@@ -1,0 +1,49 @@
+/* ==========================================================================
+   COMEPTY — brand.css
+   Logo mark and wordmark sizing across header, footer and menu.
+   ========================================================================== */
+
+.brand__wordmark {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--ink);
+  transform: translateY(0.5px);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.site-footer .brand__wordmark,
+.menu-panel .brand__wordmark {
+  color: #ffffff;
+}
+
+.brand__mark {
+  transition: transform var(--dur-mid) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+
+.brand:hover .brand__mark {
+  transform: rotate(-8deg);
+}
+
+/* Compact mark used in the footer base and small contexts */
+.brand__mark--sm {
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 420px) {
+  .brand__wordmark {
+    font-size: 0.9375rem;
+    letter-spacing: 0.14em;
+  }
+
+  .brand__mark {
+    width: 27px;
+    height: 27px;
+  }
+}

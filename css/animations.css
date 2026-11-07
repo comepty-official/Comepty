@@ -1,0 +1,369 @@
+/* ==========================================================================
+   COMEPTY — animations.css
+   Scroll reveals, hero motion, parallax, marquee, ambient detail.
+   Every effect degrades to a static, fully readable state when the user
+   prefers reduced motion.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Reveal primitives
+   Elements receive [data-reveal] from js/main.js, so markup stays clean.
+   -------------------------------------------------------------------------- */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  transition: opacity 0.8s var(--ease-out), transform 0.9s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+[data-reveal="left"] {
+  transform: translate3d(-30px, 0, 0);
+}
+
+[data-reveal="right"] {
+  transform: translate3d(30px, 0, 0);
+}
+
+[data-reveal="scale"] {
+  transform: scale(0.965);
+}
+
+[data-reveal="clip"] {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 1s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0 0 0 0);
+}
+
+/* Stagger helper: children inherit an increasing delay from JS */
+[data-stagger] > * {
+  transition-delay: calc(var(--i, 0) * 90ms + var(--reveal-delay, 0ms));
+}
+
+/* --------------------------------------------------------------------------
+   Hero entrance timeline
+   Runs once on load. Hero copy is visible by default so a script failure
+   never hides the headline.
+   -------------------------------------------------------------------------- */
+
+.hero__eyebrow,
+.hero__title-line,
+.hero__lede,
+.hero__actions,
+.hero__meta {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  animation: heroRise 1s var(--ease-out) forwards;
+}
+
+.hero__eyebrow {
+  animation-delay: 120ms;
+}
+
+.hero__title-line:nth-child(1) {
+  animation-delay: 220ms;
+}
+
+.hero__title-line:nth-child(2) {
+  animation-delay: 320ms;
+}
+
+.hero__title-line:nth-child(3) {
+  animation-delay: 420ms;
+}
+
+.hero__lede {
+  animation-delay: 520ms;
+}
+
+.hero__actions {
+  animation-delay: 620ms;
+}
+
+.hero__meta {
+  animation-delay: 720ms;
+}
+
+@keyframes heroRise {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Hero visual fades in with the copy */
+.hero__visual {
+  opacity: 0;
+  animation: heroFade 1.4s var(--ease-out) 260ms forwards;
+}
+
+@keyframes heroFade {
+  to {
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hero visual shell
+   -------------------------------------------------------------------------- */
+
+.hero__visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 560px;
+  margin-inline: auto;
+  isolation: isolate;
+}
+
+.hero__visual canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__visual-caption {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.hero__visual-caption-mark {
+  display: block;
+  width: 18px;
+  height: 1px;
+  flex: none;
+  background: var(--accent);
+  transform-origin: left center;
+  animation: captionRule 3.2s var(--ease-in-out) infinite;
+}
+
+@keyframes captionRule {
+  0%,
+  100% {
+    transform: scaleX(0.35);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Ambient grid backdrops
+   -------------------------------------------------------------------------- */
+
+.grid-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+      to right,
+      rgba(10, 11, 13, 0.055) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(10, 11, 13, 0.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse at 50% 0%, #000 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    ellipse at 50% 0%,
+    #000 0%,
+    transparent 70%
+  );
+}
+
+.section--dark .grid-backdrop {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+}
+
+/* --------------------------------------------------------------------------
+   Parallax
+   JS writes --parallax per element; CSS applies the offset.
+   -------------------------------------------------------------------------- */
+
+[data-parallax] {
+  transform: translate3d(0, var(--parallax, 0px), 0);
+  will-change: transform;
+}
+
+/* --------------------------------------------------------------------------
+   Marquee strip
+   -------------------------------------------------------------------------- */
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  border-block: 1px solid var(--border);
+  background: var(--bg);
+  padding-block: 18px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  gap: 0;
+  animation: marqueeSlide 46s linear infinite;
+}
+
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+.marquee__group {
+  display: flex;
+  align-items: center;
+  gap: clamp(28px, 4vw, 56px);
+  padding-right: clamp(28px, 4vw, 56px);
+}
+
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: var(--tracking-snug);
+  color: var(--fg);
+  white-space: nowrap;
+}
+
+.marquee__item::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--accent);
+  transform: rotate(45deg);
+  flex: none;
+}
+
+@keyframes marqueeSlide {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Subtle hover lift for tiles
+   -------------------------------------------------------------------------- */
+
+.lift {
+  transition: transform var(--dur-mid) var(--ease-out);
+}
+
+.lift:hover {
+  transform: translate3d(0, -5px, 0);
+}
+
+/* --------------------------------------------------------------------------
+   Accent underline sweep for inline links
+   -------------------------------------------------------------------------- */
+
+.sweep-link {
+  position: relative;
+  display: inline-block;
+}
+
+.sweep-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--dur-mid) var(--ease-out);
+}
+
+.sweep-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* --------------------------------------------------------------------------
+   Reduced motion
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+
+  .hero__eyebrow,
+  .hero__title-line,
+  .hero__lede,
+  .hero__actions,
+  .hero__meta,
+  .hero__visual {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .hero__visual-caption-mark {
+    animation: none;
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  .marquee__track {
+    animation: none;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  [data-parallax] {
+    transform: none !important;
+  }
+
+  .lift:hover {
+    transform: none;
+  }
+}
