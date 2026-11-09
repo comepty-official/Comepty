@@ -1,350 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Comepty | Building intelligent software for a connected world</title>
-<meta name="description" content="Comepty is an independent technology venture exploring the possibilities of AI, software automation and intelligent systems. We build practical tools and digital experiences designed to make complex work simpler.">
-<meta name="theme-color" content="#0a0b0d">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Comepty">
-<meta property="og:title" content="Comepty | Building intelligent software for a connected world">
-<meta property="og:description" content="An independent technology venture building practical software, AI tools and digital systems.">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/pages.css">
-<link rel="stylesheet" href="css/brand.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comepty | Building intelligent software for a connected world</title>
+  <meta name="description"
+    content="Comepty is an independent technology venture exploring the possibilities of AI, software automation and intelligent systems. We build practical tools and digital experiences designed to make complex work simpler.">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Comepty">
+  <meta property="og:title" content="Comepty | Building intelligent software for a connected world">
+  <meta property="og:description"
+    content="An independent technology venture building practical software, AI tools and digital systems.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/brand.css">
 </head>
+
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="site-header__inner">
-    <a class="brand" href="index.html" aria-label="Comepty home">
-      <img class="brand__mark" src="assets/logo.svg" alt="" width="32" height="32">
-      <span class="brand__wordmark">Comepty</span>
-    </a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Comepty home">
+        <img class="brand__mark" src="assets/logo.svg" alt="" width="32" height="32">
+        <span class="brand__wordmark">Comepty</span>
+      </a>
 
-    <nav class="main-nav" aria-label="Primary">
-      <a class="main-nav__link" href="index.html" aria-current="page">Home</a>
-      <a class="main-nav__link" href="about.html">About</a>
-      <a class="main-nav__link" href="services.html">Services</a>
-      <a class="main-nav__link" href="work.html">Our Work</a>
-      <a class="main-nav__link" href="innovation.html">Innovation</a>
-      <a class="main-nav__link" href="contact.html">Contact</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a class="main-nav__link" href="index.html" aria-current="page">Home</a>
+        <a class="main-nav__link" href="about.html">About</a>
+        <a class="main-nav__link" href="services.html">Services</a>
+        <a class="main-nav__link" href="work.html">My Work</a>
+        <a class="main-nav__link" href="innovation.html">Innovation</a>
+        <a class="main-nav__link" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm header-cta" href="contact.html">Start a Conversation</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel"
+          aria-label="Open menu">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-panel" id="menu-panel" aria-hidden="true">
+    <nav class="menu-panel__list" aria-label="Mobile">
+      <a class="menu-panel__link" href="index.html">Home <span>01</span></a>
+      <a class="menu-panel__link" href="about.html">About <span>02</span></a>
+      <a class="menu-panel__link" href="services.html">Services <span>03</span></a>
+      <a class="menu-panel__link" href="work.html">My Work <span>04</span></a>
+      <a class="menu-panel__link" href="innovation.html">Innovation <span>05</span></a>
+      <a class="menu-panel__link" href="contact.html">Contact <span>06</span></a>
     </nav>
-
-    <div class="header-actions">
-      <a class="btn btn--primary btn--sm header-cta" href="contact.html">Start a Conversation</a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Open menu">
-        <span class="menu-toggle__bar"></span>
-        <span class="menu-toggle__bar"></span>
-        <span class="menu-toggle__bar"></span>
-      </button>
+    <div class="menu-panel__foot">
+      <p class="eyebrow">Engineering possibilities</p>
+      <a class="btn btn--accent btn--block" href="contact.html">Start a Conversation</a>
     </div>
   </div>
-</header>
 
-<div class="menu-panel" id="menu-panel" aria-hidden="true">
-  <nav class="menu-panel__list" aria-label="Mobile">
-    <a class="menu-panel__link" href="index.html">Home <span>01</span></a>
-    <a class="menu-panel__link" href="about.html">About <span>02</span></a>
-    <a class="menu-panel__link" href="services.html">Services <span>03</span></a>
-    <a class="menu-panel__link" href="work.html">Our Work <span>04</span></a>
-    <a class="menu-panel__link" href="innovation.html">Innovation <span>05</span></a>
-    <a class="menu-panel__link" href="contact.html">Contact <span>06</span></a>
-  </nav>
-  <div class="menu-panel__foot">
-    <p class="eyebrow">Engineering possibilities</p>
-    <a class="btn btn--accent btn--block" href="contact.html">Start a Conversation</a>
-  </div>
-</div>
+  <main id="main">
 
-<main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid-backdrop" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow hero__eyebrow">Independent technology venture</p>
+            <h1 class="hero__title">
+              <span class="hero__title-line">Building</span>
+              <span class="hero__title-line"><em>intelligent</em> software</span>
+              <span class="hero__title-line">for a connected world.</span>
+            </h1>
+            <p class="hero__lede">Comepty is an independent technology venture exploring the possibilities of AI,
+              software automation and intelligent systems. We build practical tools and digital experiences designed to
+              make complex work simpler.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="work.html">
+                Explore My Work
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="square" />
+                </svg>
+              </a>
+              <a class="btn btn--ghost" href="about.html">Discover Comepty</a>
+            </div>
+            <div class="hero__meta">
+              <span>Software engineering</span>
+              <span>Artificial intelligence</span>
+              <span>Automation</span>
+            </div>
+          </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="grid-backdrop" aria-hidden="true"></div>
-    <div class="shell">
-      <div class="hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow hero__eyebrow">Independent technology venture</p>
-          <h1 class="hero__title">
-            <span class="hero__title-line">Building</span>
-            <span class="hero__title-line"><em>intelligent</em> software</span>
-            <span class="hero__title-line">for a connected world.</span>
-          </h1>
-          <p class="hero__lede">Comepty is an independent technology venture exploring the possibilities of AI, software automation and intelligent systems. We build practical tools and digital experiences designed to make complex work simpler.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="work.html">
-              Explore Our Work
-              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+          <div class="hero__visual">
+            <canvas id="ecosystem-canvas" aria-hidden="true"></canvas>
+            <p class="hero__visual-caption"><span class="hero__visual-caption-mark"></span>Systems in Motion</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Computational orchestration</span>
+          <span class="marquee__item">Modular ecosystems</span>
+          <span class="marquee__item">Progressive technology</span>
+          <span class="marquee__item">Intelligent systems</span>
+          <span class="marquee__item">Digital products</span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">Computational orchestration</span>
+          <span class="marquee__item">Modular ecosystems</span>
+          <span class="marquee__item">Progressive technology</span>
+          <span class="marquee__item">Intelligent systems</span>
+          <span class="marquee__item">Digital products</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTRO -->
+    <section class="section">
+      <div class="shell">
+        <div class="intro-split">
+          <div>
+            <p class="eyebrow" data-reveal>The thinking behind Comepty</p>
+            <p class="intro-split__lead" data-reveal style="--reveal-delay: 80ms">Comepty started with a simple
+              interest: understanding how technology could do more.</p>
+          </div>
+          <div class="intro-split__body">
+            <p data-reveal style="--reveal-delay: 120ms">Today, that interest is taking shape through software projects,
+              AI powered tools and experiments in automation. The focus is on creating systems that solve real problems
+              rather than simply adding more technology to the world.</p>
+            <p data-reveal style="--reveal-delay: 200ms">That means building things that are useful first and impressive
+              second. Each project starts with the same question. What would actually make this better for the person
+              using it?</p>
+            <p data-reveal style="--reveal-delay: 280ms">The rest is exploration. Some of it becomes a product, some of
+              it stays a study, and all of it makes the next piece of work a little sharper.</p>
+            <a class="link-arrow" href="about.html" data-reveal style="--reveal-delay: 340ms">
+              Read the longer story
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg>
             </a>
-            <a class="btn btn--ghost" href="about.html">Discover Comepty</a>
-          </div>
-          <div class="hero__meta">
-            <span>Software engineering</span>
-            <span>Artificial intelligence</span>
-            <span>Automation</span>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="hero__visual">
-          <canvas id="ecosystem-canvas" aria-hidden="true"></canvas>
-          <p class="hero__visual-caption"><span class="hero__visual-caption-mark"></span>Systems in Motion</p>
+    <!-- CAPABILITIES -->
+    <section class="section section--tight section--soft">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>What is being built</p>
+            <h2 class="h2 section-head__title" data-reveal style="--reveal-delay: 80ms">Three threads, kept close
+              together.</h2>
+          </div>
+          <div class="section-head__side">
+            <p class="lede" data-reveal style="--reveal-delay: 140ms">They stay close together because a real problem
+              rarely arrives neatly separated into one of them.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <div class="marquee__group">
-        <span class="marquee__item">Computational orchestration</span>
-        <span class="marquee__item">Modular ecosystems</span>
-        <span class="marquee__item">Progressive technology</span>
-        <span class="marquee__item">Intelligent systems</span>
-        <span class="marquee__item">Digital products</span>
-      </div>
-      <div class="marquee__group">
-        <span class="marquee__item">Computational orchestration</span>
-        <span class="marquee__item">Modular ecosystems</span>
-        <span class="marquee__item">Progressive technology</span>
-        <span class="marquee__item">Intelligent systems</span>
-        <span class="marquee__item">Digital products</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- INTRO -->
-  <section class="section">
-    <div class="shell">
-      <div class="intro-split">
-        <div>
-          <p class="eyebrow" data-reveal>The thinking behind Comepty</p>
-          <p class="intro-split__lead" data-reveal style="--reveal-delay: 80ms">Comepty started with a simple interest: understanding how technology could do more.</p>
-        </div>
-        <div class="intro-split__body">
-          <p data-reveal style="--reveal-delay: 120ms">Today, that interest is taking shape through software projects, AI powered tools and experiments in automation. The focus is on creating systems that solve real problems rather than simply adding more technology to the world.</p>
-          <p data-reveal style="--reveal-delay: 200ms">That means building things that are useful first and impressive second. Each project starts with the same question. What would actually make this better for the person using it?</p>
-          <p data-reveal style="--reveal-delay: 280ms">The rest is exploration. Some of it becomes a product, some of it stays a study, and all of it makes the next piece of work a little sharper.</p>
-          <a class="link-arrow" href="about.html" data-reveal style="--reveal-delay: 340ms">
-            Read the longer story
-            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+      <div class="shell shell--wide">
+        <div class="capability-strip" data-stagger>
+          <a class="capability-strip__cell lift" href="services.html">
+            <h3>Intelligent Software</h3>
+            <p>Developing software that makes everyday digital tasks easier.</p>
+          </a>
+          <a class="capability-strip__cell lift" href="services.html">
+            <h3>AI and Automation</h3>
+            <p>Exploring practical ways artificial intelligence can handle repetitive processes and improve workflows.
+            </p>
+          </a>
+          <a class="capability-strip__cell lift" href="services.html">
+            <h3>Digital Systems</h3>
+            <p>Connecting tools, processes and technologies into useful, functional systems.</p>
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CAPABILITIES -->
-  <section class="section section--tight section--soft">
-    <div class="shell">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow" data-reveal>What is being built</p>
-          <h2 class="h2 section-head__title" data-reveal style="--reveal-delay: 80ms">Three threads, kept close together.</h2>
-        </div>
-        <div class="section-head__side">
-          <p class="lede" data-reveal style="--reveal-delay: 140ms">They stay close together because a real problem rarely arrives neatly separated into one of them.</p>
+    <!-- FEATURED WORK -->
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>Selected projects</p>
+            <h2 class="h2 section-head__title" data-reveal style="--reveal-delay: 80ms">Work that shaped how this is
+              built.</h2>
+          </div>
+          <div class="section-head__side">
+            <p class="lede" data-reveal style="--reveal-delay: 140ms">A small collection of live and experimental
+              projects. Each one is an honest record of what was being explored at the time.</p>
+            <a class="link-arrow" href="work.html" data-reveal style="--reveal-delay: 200ms">
+              View all projects
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="shell shell--wide">
-      <div class="capability-strip" data-stagger>
-        <a class="capability-strip__cell lift" href="services.html">
-          <h3>Intelligent Software</h3>
-          <p>Developing software that makes everyday digital tasks easier.</p>
-        </a>
-        <a class="capability-strip__cell lift" href="services.html">
-          <h3>AI and Automation</h3>
-          <p>Exploring practical ways artificial intelligence can handle repetitive processes and improve workflows.</p>
-        </a>
-        <a class="capability-strip__cell lift" href="services.html">
-          <h3>Digital Systems</h3>
-          <p>Connecting tools, processes and technologies into useful, functional systems.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURED WORK -->
-  <section class="section">
-    <div class="shell">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow" data-reveal>Selected projects</p>
-          <h2 class="h2 section-head__title" data-reveal style="--reveal-delay: 80ms">Work that shaped how this is built.</h2>
-        </div>
-        <div class="section-head__side">
-          <p class="lede" data-reveal style="--reveal-delay: 140ms">A small collection of live and experimental projects. Each one is an honest record of what was being explored at the time.</p>
-          <a class="link-arrow" href="work.html" data-reveal style="--reveal-delay: 200ms">
-            View all projects
-            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+      <div class="shell shell--wide">
+        <div class="featured-stack" data-stagger>
+          <a class="featured-row" href="work.html">
+            <span class="featured-row__index">01</span>
+            <span class="featured-row__name">Frodecorp</span>
+            <span class="featured-row__desc">A visual website building concept built around a canvas based
+              editor.</span>
+            <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg></span>
+          </a>
+          <a class="featured-row" href="work.html">
+            <span class="featured-row__index">02</span>
+            <span class="featured-row__name">Lunosen Stitches</span>
+            <span class="featured-row__desc">A complete digital presence for a stitching and fashion studio.</span>
+            <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg></span>
+          </a>
+          <a class="featured-row" href="work.html">
+            <span class="featured-row__index">03</span>
+            <span class="featured-row__name">Skincare</span>
+            <span class="featured-row__desc">A product focused web project exploring calm, editorial digital
+              retail.</span>
+            <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg></span>
+          </a>
+          <a class="featured-row" href="work.html">
+            <span class="featured-row__index">04</span>
+            <span class="featured-row__name">Mass. Story</span>
+            <span class="featured-row__desc">A digital storytelling experiment about narrative and presentation.</span>
+            <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg></span>
+          </a>
+          <a class="featured-row" href="work.html">
+            <span class="featured-row__index">05</span>
+            <span class="featured-row__name">CSIC</span>
+            <span class="featured-row__desc">An experimental desktop assistant connecting AI to everyday computer
+              work.</span>
+            <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg></span>
           </a>
         </div>
       </div>
-    </div>
-    <div class="shell shell--wide">
-      <div class="featured-stack" data-stagger>
-        <a class="featured-row" href="work.html">
-          <span class="featured-row__index">01</span>
-          <span class="featured-row__name">Frodecorp</span>
-          <span class="featured-row__desc">A visual website building concept built around a canvas based editor.</span>
-          <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg></span>
-        </a>
-        <a class="featured-row" href="work.html">
-          <span class="featured-row__index">02</span>
-          <span class="featured-row__name">Lunosen Stitches</span>
-          <span class="featured-row__desc">A complete digital presence for a stitching and fashion studio.</span>
-          <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg></span>
-        </a>
-        <a class="featured-row" href="work.html">
-          <span class="featured-row__index">03</span>
-          <span class="featured-row__name">Skincare</span>
-          <span class="featured-row__desc">A product focused web project exploring calm, editorial digital retail.</span>
-          <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg></span>
-        </a>
-        <a class="featured-row" href="work.html">
-          <span class="featured-row__index">04</span>
-          <span class="featured-row__name">Mass. Story</span>
-          <span class="featured-row__desc">A digital storytelling experiment about narrative and presentation.</span>
-          <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg></span>
-        </a>
-        <a class="featured-row" href="work.html">
-          <span class="featured-row__index">05</span>
-          <span class="featured-row__name">CSIC</span>
-          <span class="featured-row__desc">An experimental desktop assistant connecting AI to everyday computer work.</span>
-          <span class="featured-row__go"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg></span>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- APPROACH -->
-  <section class="section section--soft">
+    <!-- APPROACH -->
+    <section class="section section--soft">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>How the work gets done</p>
+            <h2 class="h2 section-head__title" data-reveal style="--reveal-delay: 80ms">Four steps, repeated honestly.
+            </h2>
+          </div>
+          <div class="section-head__side">
+            <p class="lede" data-reveal style="--reveal-delay: 140ms">It starts from the problem, not the tool. This
+              sequence is the one I return to because it keeps the decisions honest.</p>
+          </div>
+        </div>
+        <div class="process" data-stagger>
+          <div class="process__step">
+            <span class="process__num">Step 01</span>
+            <h3>Understand</h3>
+            <p>Map the real process, including the parts nobody wrote down, before proposing anything.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__num">Step 02</span>
+            <h3>Architect</h3>
+            <p>Choose a structure that can grow, and keep it as simple as the problem allows.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__num">Step 03</span>
+            <h3>Build</h3>
+            <p>Get working software in front of people early, and surface the difficult questions first.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__num">Step 04</span>
+            <h3>Refine</h3>
+            <p>Measure what changed, remove what does not earn its place, and prepare the next step.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="grid-backdrop" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>Experiments</p>
+            <h2 class="h2 section-head__title" data-reveal style="--reveal-delay: 80ms">The technology being explored.
+            </h2>
+          </div>
+          <div class="section-head__side">
+            <p class="lede" data-reveal style="--reveal-delay: 140ms">Part of the time goes to ideas with no client and
+              no deadline. Some become products. All of them make the rest of the work sharper.</p>
+            <a class="link-arrow link-arrow--light" href="innovation.html" data-reveal style="--reveal-delay: 200ms">See
+              what is being explored <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="hair-grid hair-grid--3" data-stagger>
+          <div class="feature-item"><span class="feature-item__index">01</span>
+            <h3>Emerging AI</h3>
+            <p>New models and interfaces get tested early, so it is clear what they are genuinely good at.</p>
+          </div>
+          <div class="feature-item"><span class="feature-item__index">02</span>
+            <h3>Intelligent automation</h3>
+            <p>Prototypes that connect tools, files and workflows into something that runs on its own.</p>
+          </div>
+          <div class="feature-item"><span class="feature-item__index">03</span>
+            <h3>Modular systems</h3>
+            <p>Small, replaceable parts that can be recombined as a product or a company grows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-band__grid" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="cta-band__inner">
+          <div>
+            <h2 data-reveal>Have something worth building?</h2>
+            <p data-reveal style="--reveal-delay: 100ms">An idea, a project or an interesting problem to solve? I would
+              be glad to hear about it.</p>
+          </div>
+          <div class="cta-band__actions" data-reveal style="--reveal-delay: 180ms">
+            <a class="btn btn--light" href="contact.html">Start a Conversation <svg viewBox="0 0 16 16" fill="none"
+                aria-hidden="true">
+                <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="square" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
     <div class="shell">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow" data-reveal>How the work gets done</p>
-          <h2 class="h2 section-head__title" data-reveal style="--reveal-delay: 80ms">Four steps, repeated honestly.</h2>
+      <div class="site-footer__top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Comepty home"><img class="brand__mark"
+              src="assets/logo-light.svg" alt="" width="32" height="32"><span class="brand__wordmark">Comepty</span></a>
+          <p>An independent technology venture exploring AI, software automation and intelligent systems.</p>
         </div>
-        <div class="section-head__side">
-          <p class="lede" data-reveal style="--reveal-delay: 140ms">It starts from the problem, not the tool. This sequence is the one I return to because it keeps the decisions honest.</p>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="innovation.html">Innovation</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Work</h3>
+          <a href="work.html">All projects</a>
+          <a href="https://comepty-official.github.io/Frodecorp-/" target="_blank"
+            rel="noopener noreferrer">Frodecorp</a>
+          <a href="https://lunosenstitches.org/" target="_blank" rel="noopener noreferrer">Lunosen Stitches</a>
+          <a href="https://skincare.comepty-org.workers.dev/" target="_blank" rel="noopener noreferrer">Skincare</a>
+          <a href="https://comepty-official.github.io/MASS.-STORY/" target="_blank" rel="noopener noreferrer">Mass.
+            Story</a>
+        </div>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <a href="https://github.com/comepty-official/" target="_blank" rel="noopener noreferrer">GitHub organisation
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" />
+            </svg></a>
+          <a href="contact.html">Start a conversation</a>
+          <li class="text-muted">Contact details coming soon</li>
         </div>
       </div>
-      <div class="process" data-stagger>
-        <div class="process__step">
-          <span class="process__num">Step 01</span>
-          <h3>Understand</h3>
-          <p>Map the real process, including the parts nobody wrote down, before proposing anything.</p>
-        </div>
-        <div class="process__step">
-          <span class="process__num">Step 02</span>
-          <h3>Architect</h3>
-          <p>Choose a structure that can grow, and keep it as simple as the problem allows.</p>
-        </div>
-<div class="process__step">
-          <span class="process__num">Step 03</span>
-          <h3>Build</h3>
-          <p>Get working software in front of people early, and surface the difficult questions first.</p>
-        </div>
-        <div class="process__step">
-          <span class="process__num">Step 04</span>
-          <h3>Refine</h3>
-          <p>Measure what changed, remove what does not earn its place, and prepare the next step.</p>
-        </div>
+      <div class="footer-statement">
+        <p>Engineering technology for a more connected future.</p>
+        <a href="contact.html">Start a Conversation <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" />
+          </svg></a>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span id="year">2026</span> Comepty. All rights reserved.</span>
+        <div class="footer-base__meta"><span>Computational Orchestration of Modular Ecosystems for Progressive
+            Technology and Yield</span></div>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <section class="section section--dark">
-    <div class="grid-backdrop" aria-hidden="true"></div>
-    <div class="shell">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow" data-reveal>Experiments</p>
-          <h2 class="h2 section-head__title" data-reveal style="--reveal-delay: 80ms">The technology being explored.</h2>
-        </div>
-        <div class="section-head__side">
-          <p class="lede" data-reveal style="--reveal-delay: 140ms">Part of the time goes to ideas with no client and no deadline. Some become products. All of them make the rest of the work sharper.</p>
-          <a class="link-arrow link-arrow--light" href="innovation.html" data-reveal style="--reveal-delay: 200ms">See what is being explored <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg></a>
-        </div>
-      </div>
-      <div class="hair-grid hair-grid--3" data-stagger>
-        <div class="feature-item"><span class="feature-item__index">01</span><h3>Emerging AI</h3><p>New models and interfaces get tested early, so it is clear what they are genuinely good at.</p></div>
-        <div class="feature-item"><span class="feature-item__index">02</span><h3>Intelligent automation</h3><p>Prototypes that connect tools, files and workflows into something that runs on its own.</p></div>
-        <div class="feature-item"><span class="feature-item__index">03</span><h3>Modular systems</h3><p>Small, replaceable parts that can be recombined as a product or a company grows.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div class="cta-band__grid" aria-hidden="true"></div>
-    <div class="shell">
-      <div class="cta-band__inner">
-        <div>
-          <h2 data-reveal>Have something worth building?</h2>
-          <p data-reveal style="--reveal-delay: 100ms">An idea, a project or an interesting problem to solve? I would be glad to hear about it.</p>
-        </div>
-        <div class="cta-band__actions" data-reveal style="--reveal-delay: 180ms">
-          <a class="btn btn--light" href="contact.html">Start a Conversation <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="shell">
-    <div class="site-footer__top">
-      <div class="footer-brand">
-        <a class="brand" href="index.html" aria-label="Comepty home"><img class="brand__mark" src="assets/logo-light.svg" alt="" width="32" height="32"><span class="brand__wordmark">Comepty</span></a>
-        <p>An independent technology venture exploring AI, software automation and intelligent systems.</p>
-      </div>
-      <div class="footer-col">
-        <h3>Company</h3>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="innovation.html">Innovation</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h3>Work</h3>
-        <a href="work.html">All projects</a>
-        <a href="https://comepty-official.github.io/Frodecorp-/" target="_blank" rel="noopener noreferrer">Frodecorp</a>
-        <a href="https://lunosenstitches.org/" target="_blank" rel="noopener noreferrer">Lunosen Stitches</a>
-        <a href="https://skincare.comepty-org.workers.dev/" target="_blank" rel="noopener noreferrer">Skincare</a>
-        <a href="https://comepty-official.github.io/MASS.-STORY/" target="_blank" rel="noopener noreferrer">Mass. Story</a>
-      </div>
-      <div class="footer-col">
-        <h3>Connect</h3>
-        <a href="https://github.com/comepty-official/" target="_blank" rel="noopener noreferrer">GitHub organisation <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M12 4H5.5M12 4v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg></a>
-        <a href="contact.html">Start a conversation</a>
-        <li class="text-muted">Contact details coming soon</li>
-      </div>
-    </div>
-    <div class="footer-statement">
-      <p>Engineering technology for a more connected future.</p>
-      <a href="contact.html">Start a Conversation <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg></a>
-    </div>
-    <div class="footer-base">
-      <span>&copy; <span id="year">2026</span> Comepty. All rights reserved.</span>
-      <div class="footer-base__meta"><span>Computational Orchestration of Modular Ecosystems for Progressive Technology and Yield</span></div>
-    </div>
-  </div>
-</footer>
-
-<script src="js/hero.js" defer></script>
-<script src="js/main.js" defer></script>
+  <script src="js/hero.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
+
 </html>
